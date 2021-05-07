@@ -4,8 +4,12 @@ class Connection:
     connections = []
 
     def __init__(self, host):
-        self.host = host
-        self.connections.append(self)
+        if len(self.connections) < self.conn_limit:
+            self.host = host
+            self.connections.append(self)
+            self.port += len(self.connections)
+        else:
+            print("There is no room for more connections.")
 
     def close(self):
         self.connections.remove(self)
