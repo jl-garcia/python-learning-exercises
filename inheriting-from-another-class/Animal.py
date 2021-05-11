@@ -4,7 +4,7 @@ class Animal:
         self.size = size
 
     def __repr__(self):
-        return f"Animal name: {self.name} - size: {self.size}"
+        return f"Name: {self.name} - size: {self.size}"
 
 
 class Wolf(Animal):
@@ -12,7 +12,7 @@ class Wolf(Animal):
         super().__init__(name, size)
 
     def __repr__(self):
-        return f"Wolf name: {self.name} - size: {self.size}"
+        return super().__repr__()
 
 
 class Bear(Animal):
@@ -20,7 +20,7 @@ class Bear(Animal):
         super().__init__(name, size)
 
     def __repr__(self):
-        return f"Bear name: {self.name} - size: {self.size}"
+        return super().__repr__()
 
 
 class Eagle(Animal):
@@ -28,7 +28,7 @@ class Eagle(Animal):
         super().__init__(name, size)
 
     def __repr__(self):
-        return f"Eagle name: {self.name} - size: {self.size}"
+        return super().__repr__()
 
 
 class Duck(Animal):
@@ -36,7 +36,7 @@ class Duck(Animal):
         super().__init__(name, size)
 
     def __repr__(self):
-        return f"Duck name: {self.name} - size: {self.size}"
+        return super().__repr__()
 
 
 class Frog(Animal):
@@ -45,7 +45,7 @@ class Frog(Animal):
         self.depth = depth
 
     def __repr__(self):
-        return f"Frog name: {self.name} - size: {self.size} - depth: {self.depth}"
+        return f"Name: {self.name} - size: {self.size} - depth: {self.depth}"
 
 
 class Trout(Animal):
@@ -54,7 +54,7 @@ class Trout(Animal):
         self.depth = depth
 
     def __repr__(self):
-        return f"Trout name: {self.name} - size: {self.size} - depth: {self.depth}"
+        return f"Name: {self.name} - size: {self.size} - depth: {self.depth}"
 
 
 def main():
